@@ -14,12 +14,15 @@
 
 ## 3. 设计令牌
 
-- 颜色：
-- 字号：
-- 间距：
-- 圆角：
-- 阴影：
-- 动效：
+填写项目实际值（CSS 变量，详细定义见 `docs/frontend/styling.md`）：
+
+- 主色：`var(--color-primary)` → 示例 `#3b82f6`
+- 危险色：`var(--color-danger)` → 示例 `#ef4444`
+- 正文色：`var(--color-text)` → 示例 `#1f2937`
+- 字号基准：正文 `1rem`，辅助 `0.875rem`，标题 `1.25rem`
+- 间距基准：`--space-4` → `1rem`（8px 栅格）
+- 圆角：`--radius-md` → 示例 `0.5rem`
+- 动效：过渡 `150ms ease`，不超过 `300ms`
 
 要求：
 

@@ -115,4 +115,14 @@
 （根据项目填写，示例：）
 - `src/shared/api/generated` 由 OpenAPI 生成，修改 schema 后重新生成
 - 表格筛选状态统一放 URL query
-- 开发服务启动前先检查端口占用 
+- 开发服务启动前先检查端口占用
+
+## 速查卡
+
+| 场景 | 规则 |
+|------|------|
+| UI 改动 | `pnpm lint && pnpm typecheck` |
+| 逻辑改动 | 上述 + `pnpm test` |
+| 新代码落点 | shared → entities → features → app |
+| 组件命名 | 文件 PascalCase，目录 kebab-case |
+| 禁止 | 硬编码颜色 / any 扩散 / 组件内直接 fetch / 修改生成文件 |
